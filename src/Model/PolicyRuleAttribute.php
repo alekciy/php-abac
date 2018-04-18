@@ -13,7 +13,7 @@ class PolicyRuleAttribute
     /** @var mixed **/
     protected $value;
     /** @var array **/
-    protected $extraData;
+    protected $extraData = [];
     /** @var array Extended parameter */
     protected $getter_params_a = [];
 
