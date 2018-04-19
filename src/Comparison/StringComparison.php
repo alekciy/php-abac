@@ -25,4 +25,15 @@ class StringComparison extends AbstractComparison
     {
         return !$this->isEqual($expected, $value);
     }
+
+    /**
+     * @param string $expected The pattern to search for, as a string.
+     * @param string $value The input string.
+     *
+     * @return bool
+     */
+    public function isMatch($expected, $value)
+    {
+        return boolval(preg_match($expected, $value));
+    }
 }
